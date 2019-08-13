@@ -1,0 +1,85 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <meta charset="UTF-8">
+    <title> Food First Nutrition </title> 
+    <link rel="stylesheet" type="text/css" href="classes.css"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="nutrition counseling for older adults">
+    
+</head> 
+
+<body> 
+<div id="container">
+    <div class="title"> 
+     <a href="index.html"> <h1 id="homepagetitle"> Food First Nutrition </h1> 
+        </a> </div> 
+  <div id="topbar">
+          <div id="topmenu">
+           <ul class="nav"> 
+               <li> <a href="aboutme.html">About</a></li>    
+                 <li> <a href=services.html>Services</a></li>
+               <li> <a href="blog.html">Blog</a></li>
+               <li> <a href="contactme.html">Contact</a></li>
+              </ul>
+        </div>
+        <div class="nav" id="searchbar">
+          <input type="text" placeholder="search" />    
+             
+        </div> 
+      </div>
+    </div>  
+<div id="content">
+   <h1 class="classes"> Nutrition Classes/Consulting </h1> 
+    <img class="classes" src="apple-close-up-delicious.jpg" alt="measuringanapple" height="300" width="400"> 
+    <div id="information">
+    <p> Food First Nutrition also offers nutrition classes for the community and other facilities/corporations. Class topics can range from general nutrition to more advanced nutrition for chronic diseases. Nutrition consulting for assisted living, independent living, or retirement communities is also available upon request. 
+        <br><br><br> For pricing details, click the button below. </p>
+    
+<!-- Trigger/Open The Modal -->
+<button id="myBtn">Pricing Details</button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Community Nutrition Class: $125/hr
+      <br> Facility Nutrition Class: $125/hr
+      <br> Nutrition Consulting Facility: $45/hr </p>
+  </div>
+</div>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+    </div>
+    </body>
+</html>
+    
